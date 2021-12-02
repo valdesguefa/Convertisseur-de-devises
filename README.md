@@ -1,5 +1,13 @@
 # Convertisseur
 # comment lancer l'application sur un serveur Xamp
+ce code est un convertisseur de devises (EUR,FRANC, 💲) elementaire ecrite Avec le framework Angular
+pour lancer le projet chez soi executer la ccommande 'npm install' dans le repertoire de ce projet
+
+pour le deployer sur un serveur Xamp 
+- placer le dossier (convertisseur) contenu dans dist dans le repertoire htdocs de votre serveur Xamp 
+- puis lancer votre serveur 
+- dans la barre de recherche de votre navigateur taper le lien suivant "http://localhost/convertisseur/"
+##
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
