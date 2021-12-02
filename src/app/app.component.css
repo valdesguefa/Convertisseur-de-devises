@@ -1,0 +1,14 @@
+.body{
+    background: linear-gradient(135deg,rgb(238, 167, 34) 30%, orange 40%, cyan);
+    text-align: center;
+}
+.option{
+    border-radius: 5px;
+    background-color: aquamarine;
+    font-family: serif;
+    font-size: small;
+}
+label{
+    font-size: smaller;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

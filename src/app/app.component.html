@@ -1,0 +1,44 @@
+<div class="body">
+	<div>
+		<h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">CONVERTISSEUR DE DEVISES : FCFA, EURO,
+			DOLLARS </h1>
+	</div>
+	<form #monForm=ngForm class="form">
+		<fieldset>
+			<div style="display: inline-flex;">
+				<div style="display: block">
+					<p>
+						<label>Veuillez choisir la monnaie de départ</label><br /><br />
+						<select name="startdevise" id="anime" [(ngModel)]=startdevise>
+							<option value="FCFA"> FRANC CFA </option>
+							<option value="EURO"> EURO </option>
+							<option value="DOLLARS"> DOLLARS </option>
+
+						</select>
+					</p>
+					<br /><br />
+					<div style="margin-left: 80%;margin-top: -10%;">
+						<label style="text-align: center !important;margin-left: 60px;" for="val">Somme</label>
+						<input type="number" name="val" id="val" require [(ngModel)]=val /><br />
+					</div>
+				</div>
+				<p style="margin-left: 40px;">
+					<label for="anime">Veuillez choisir la monnaie en laquelle vous souhaitez
+						convertir</label><br /><br />
+					<select name="finaldevise" id="anime" [(ngModel)]=finaldevise>
+						<option value="FCFA"> FRANC CFA </option>
+						<option value="EURO"> EURO </option>
+						<option value="DOLLARS"> DOLLARS </option>
+
+					</select>
+				</p><br />
+			</div>
+			<div style="margin-top: 50px;">
+				<label for='result' style="font-size: 25px;"><strong>Resultat</strong></label><br />
+				<strong style="font-size: 30px;" name="resultat" id='result'> {{val|devisePipe:startdevise:finaldevise}}</strong>
+			</div>
+		</fieldset>
+
+	</form>
+
+</div>
