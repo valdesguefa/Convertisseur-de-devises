@@ -1,4 +1,5 @@
 # Convertisseur
+# comment lancer l'application sur un serveur Xamp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
